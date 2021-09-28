@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
@@ -73,7 +73,6 @@ function App() {
                       Copy
                     </Button>
                   </Form.Group>
-                  
                 </Form>
               </div>
             </Accordion.Body>
