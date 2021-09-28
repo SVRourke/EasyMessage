@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import templatePrepper from "./templatePrep";
 import { Container, Row, Accordion, Form, Button } from "react-bootstrap";
 
+import "./bootstrap.css";
 import "./App.css";
 
 function App() {
@@ -44,7 +44,9 @@ function App() {
                     />
                   </Form.Group>
                   <Form.Group>
-                    <Button type="submit">Use Template</Button>
+                    <Button variant="primary" type="submit" className="mt-3">
+                      Use Template
+                    </Button>
                   </Form.Group>
                 </Form>
               </div>
@@ -58,19 +60,20 @@ function App() {
                 <Form onSubmit={infoHandler}>
                   <Form.Group>
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" name="name" />
+                    <Form.Control size="lg" type="text" name="name" />
                   </Form.Group>
 
                   <Form.Group>
                     <Form.Label>Company</Form.Label>
-                    <Form.Control type="text" name="company" />
+                    <Form.Control size="lg" type="text" name="company" />
                   </Form.Group>
 
                   <Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" type="submit" className="mt-3">
                       Copy
                     </Button>
                   </Form.Group>
+                  
                 </Form>
               </div>
             </Accordion.Body>
